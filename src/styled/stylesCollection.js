@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import { css } from "styled-components";
 
 export const smoothBackground = css`
   background-image: linear-gradient(${props => props.theme.backgroundOne}, ${props => props.theme.backgroundTwo});
