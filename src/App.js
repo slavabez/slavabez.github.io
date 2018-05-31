@@ -32,18 +32,31 @@ class App extends React.Component {
           <ThemeSwitchButton handleThemeToggle={this.handleThemeToggle} />
           <FloatingContent>
             <Header>Slava Bezgachev</Header>
-            <Bio>Web developer bla bla</Bio>
+            <Bio>
+              I am a full stack web developer, lately focusing on mastering
+              Javascript. I like working with NodeJS and ReactJS, check out my
+              GitHub page for some work I've done and check out my portfolio
+              where I take some in-depth looks into some of my projects.
+            </Bio>
+
+            <Bio>
+              Best way to contact me is by email {" "}
+              <a href="mailto:slava@bezgachev.com">slava@bezgachev.com</a>
+            </Bio>
             <LogoWrapper>
-              <LogoLink target="_blank" href="">
+              <LogoLink target="_blank" href="https://github.com/slavabez">
                 <GithubIcon />
               </LogoLink>
-              <LogoLink target="_blank" href="">
-                <MediumIcon/>
+              <LogoLink target="_blank" href="https://medium.com/@bezgachev">
+                <MediumIcon />
               </LogoLink>
-              <LogoLink target="_blank" href="">
+              <LogoLink
+                target="_blank"
+                href="https://stackoverflow.com/users/story/2237238"
+              >
                 <StackOverflowIcon />
               </LogoLink>
-              <LogoLink target="_blank" href="">
+              <LogoLink target="_blank" href="https://twitter.com/slavabez">
                 <TwitterIcon />
               </LogoLink>
             </LogoWrapper>
