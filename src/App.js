@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import AppWrapper from "./styled/AppWrapper";
+import ScrollablePane from "./styled/ScrolalblePane";
 import FloatingContent from "./styled/FloatingContent";
 import { Header, Bio, LogoLink, LogoWrapper } from "./styled/textCollection";
 import ThemeSwitchButton from "./ThemeSwitchButton";
@@ -29,38 +30,41 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={this.state.theme}>
         <AppWrapper>
-          <ThemeSwitchButton handleThemeToggle={this.handleThemeToggle} />
-          <FloatingContent>
-            <Header>Slava Bezgachev</Header>
-            <Bio>
-              I am a full stack web developer, lately focusing on mastering
-              Javascript. I like working with NodeJS and ReactJS, check out my
-              GitHub page for some work I've done and check out my portfolio
-              where I take some in-depth looks into some of my projects.
-            </Bio>
+          <ScrollablePane>
+            <ThemeSwitchButton handleThemeToggle={this.handleThemeToggle} />
+            <FloatingContent>
+              <Header>Slava Bezgachev</Header>
+              <Bio>
+                I am a full stack web developer, lately focusing on mastering
+                Javascript. I like working with NodeJS and ReactJS, check out my
+                GitHub page for some work I've done and check out my{" "}
+                <a href="#">portfolio</a> where I take some in-depth looks into
+                some of my projects.
+              </Bio>
 
-            <Bio>
-              Best way to contact me is by email {" "}
-              <a href="mailto:slava@bezgachev.com">slava@bezgachev.com</a>
-            </Bio>
-            <LogoWrapper>
-              <LogoLink target="_blank" href="https://github.com/slavabez">
-                <GithubIcon />
-              </LogoLink>
-              <LogoLink target="_blank" href="https://medium.com/@bezgachev">
-                <MediumIcon />
-              </LogoLink>
-              <LogoLink
-                target="_blank"
-                href="https://stackoverflow.com/users/story/2237238"
-              >
-                <StackOverflowIcon />
-              </LogoLink>
-              <LogoLink target="_blank" href="https://twitter.com/slavabez">
-                <TwitterIcon />
-              </LogoLink>
-            </LogoWrapper>
-          </FloatingContent>
+              <Bio>
+                Best way to contact me is by email{" "}
+                <a href="mailto:slava@bezgachev.com">slava@bezgachev.com</a>
+              </Bio>
+              <LogoWrapper>
+                <LogoLink target="_blank" href="https://github.com/slavabez">
+                  <GithubIcon />
+                </LogoLink>
+                <LogoLink target="_blank" href="https://medium.com/@bezgachev">
+                  <MediumIcon />
+                </LogoLink>
+                <LogoLink
+                  target="_blank"
+                  href="https://stackoverflow.com/users/story/2237238"
+                >
+                  <StackOverflowIcon />
+                </LogoLink>
+                <LogoLink target="_blank" href="https://twitter.com/slavabez">
+                  <TwitterIcon />
+                </LogoLink>
+              </LogoWrapper>
+            </FloatingContent>
+          </ScrollablePane>
         </AppWrapper>
       </ThemeProvider>
     );
