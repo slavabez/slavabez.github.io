@@ -1,8 +1,9 @@
-import React from "react";
 import styled from "styled-components";
 
 const ScrollablePane = styled.div`
-  // TODO: make scrollable inside, to be able to put content in
+  overflow-x: scroll;
+  overflow-y: visible;
+  height: 100vh;
 `;
 
 export default ScrollablePane;
