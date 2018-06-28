@@ -8,7 +8,7 @@
     "react-scripts": "1.1.4",
     "styled-components": "^3.3.0"
   },
-  "homepage": "https://slavabez.github.io/portfolio",
+  "homepage": "https://slavabez.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

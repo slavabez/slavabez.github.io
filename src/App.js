@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 import AppWrapper from "./styled/AppWrapper";
 import ScrollablePane from "./styled/ScrolalblePane";
 import FrontPage from "./styled/FrontPage";
-import ContentPage from "./styled/ContentPage";
 import FloatingContent from "./styled/FloatingContent";
 import { Header, Bio, LogoLink, LogoWrapper } from "./styled/textCollection";
 import ThemeSwitchButton from "./ThemeSwitchButton";
@@ -71,7 +70,6 @@ class App extends React.Component {
                 </LogoWrapper>
               </FloatingContent>
             </FrontPage>
-            <ContentPage>Content</ContentPage>
           </ScrollablePane>
         </AppWrapper>
       </ThemeProvider>
